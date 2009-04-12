@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>jQuery-puffy demo 01</title>
+  <script src="js/jquery-1.3.2.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="../jquery-puffy.js"></script>
+  
+  <script>
+  $(document).ready(function(){
+		$('#i1').click(function(){$(this).puffy();});
+		$('#i2').click(function(){$(this).puffy({speed: 1500});});
+		$('#i3').click(function(){$(this).puffy({finish: function(){
+			$('#i3').attr('src', 'img/semooh_chira.gif');
+		}});});
+		$('#i4').mouseover(function(){$(this).puffy();});
+  });
+  </script>
+</head>
+<body>
+	<div style="padding: 50px; cursor: pointer;">
+		<img id="i1" src="img/semooh_back.gif" width="108" height="206" />
+		<img id="i2" src="img/semooh_back.gif" width="108" height="206" />
+		<img id="i3" src="img/semooh_back.gif" width="108" height="206" />
+		<img id="i4" src="img/semooh_back.gif" width="108" height="206" />
+	</div>
+</body>
+</html>
