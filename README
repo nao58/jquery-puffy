@@ -9,5 +9,5 @@ Usage:
 Options:
 	effect: change effect in case you don't want to use puff.
 	options: options for effect.
-	speed: effect speed.
-	finish: callback function which is called when the effect has finished.
+	duration: effect speed.
+	callback: callback function which is called when the effect has finished.

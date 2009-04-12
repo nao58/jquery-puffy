@@ -10,9 +10,9 @@
   <script>
   $(document).ready(function(){
 		$('#i1').click(function(){$(this).puffy();});
-		$('#i2').click(function(){$(this).puffy({speed: 1500});});
-		$('#i3').click(function(){$(this).puffy({finish: function(){
-			$('#i3').attr('src', 'img/semooh_chira.gif');
+		$('#i2').click(function(){$(this).puffy({duration: 1500});});
+		$('#i3').click(function(){$(this).puffy({callback: function(){
+			$(this).attr('src', 'img/semooh_chira.gif');
 		}});});
 		$('#i4').mouseover(function(){$(this).puffy();});
   });
@@ -24,6 +24,9 @@
 		<img id="i2" src="img/semooh_back.gif" width="108" height="206" />
 		<img id="i3" src="img/semooh_back.gif" width="108" height="206" />
 		<img id="i4" src="img/semooh_back.gif" width="108" height="206" />
+	</div>
+	<div>
+		<a href="http://nao58.github.com/jquery-puffy/">jQuery-puffy</a>
 	</div>
 </body>
 </html>

@@ -3,8 +3,8 @@
 		var opt = $.extend({
 			effect: 'puff',
 			options: {},
-			speed: 500,
-			finish: null
+			duration: 500,
+			callback: null
 		}, (option||{}));
 		return this.each(function(){
 			var e = $(this);
@@ -16,9 +16,9 @@
 				position: 'absolute'
 			}).appendTo(document.body);
 			if(ef.effect){
-				ef.effect(opt.effect, opt.options, opt.speed, function(){
+				ef.effect(opt.effect, opt.options, opt.duration, function(){
 					ef.remove();
-					if(opt.finish){opt.finish();}
+					if(opt.callback){opt.callback.apply(e);}
 				});
 			}
 		});
