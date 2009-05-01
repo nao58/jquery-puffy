@@ -1,3 +1,13 @@
+/*
+ * jQuery Puffy 1.0.1
+ *
+ * Copyright (c) 2009 Naohiko MORI
+ * Dual licensed under the MIT and GPL licenses.
+ *
+ * Depends:
+ *   effects.core.js
+ *   effects.puff.js
+ */
 (function($){
 	$.fn.puffy = function(option){
 		var opt = $.extend({
