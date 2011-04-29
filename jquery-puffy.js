@@ -1,7 +1,7 @@
 /*
- * jQuery Puffy 1.0.1
+ * jQuery Puffy 1.0.2
  *
- * Copyright (c) 2009 Naohiko MORI
+ * Copyright (c) 2011 Naohiko MORI
  * Dual licensed under the MIT and GPL licenses.
  *
  * Depends:
