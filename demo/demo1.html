@@ -14,16 +14,16 @@
 		$('#i3').click(function(){$(this).puffy({callback: function(){
 			$(this).attr('src', 'img/semooh_chira.gif');
 		}});});
-		$('#i4').mouseover(function(){$(this).puffy();});
+		$('#i4').mouseover(function(){$(this).puffy({overlay: false, duration: 700});});
   });
   </script>
 </head>
 <body>
 	<div style="padding: 50px; cursor: pointer;">
-		<img id="i1" src="img/semooh_back.gif" width="108" height="206" />
+		<a href="http://screw-axis.com/"><img id="i1" src="img/semooh_back.gif" width="108" height="206" /></a>
 		<img id="i2" src="img/semooh_back.gif" width="108" height="206" />
 		<img id="i3" src="img/semooh_back.gif" width="108" height="206" />
-		<img id="i4" src="img/semooh_back.gif" width="108" height="206" />
+		<a href="http://google.com/"><img id="i4" src="img/semooh_back.gif" width="108" height="206" /></a>
 	</div>
 	<div>
 		<a href="http://nao58.github.com/jquery-puffy/">jQuery-puffy</a>

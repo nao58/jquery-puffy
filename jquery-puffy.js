@@ -24,7 +24,7 @@
 				left: pos.left,
 				top:  pos.top,
 				position: 'absolute'
-			}).appendTo(document.body);
+			}).insertAfter(e);
 			if(ef.effect){
 				ef.effect(opt.effect, opt.options, opt.duration, function(){
 					ef.remove();
