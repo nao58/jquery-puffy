@@ -1,5 +1,5 @@
 /*
- * jQuery Puffy 1.0.2
+ * jQuery Puffy 1.0.3
  *
  * Copyright (c) 2011 Naohiko MORI
  * Dual licensed under the MIT and GPL licenses.
@@ -24,10 +24,15 @@
 				left: pos.left,
 				top:  pos.top,
 				position: 'absolute'
-			}).insertAfter(e);
+			}).appendTo(document.body);
+			if(e.parent().get(0).tagName == 'A'){
+				var anc = e.parent().clone().empty();
+				ef.wrap(anc);
+			}
 			if(ef.effect){
 				ef.effect(opt.effect, opt.options, opt.duration, function(){
 					ef.remove();
+					if(anc){ anc.remove(); }
 					if(opt.callback){opt.callback.apply(e);}
 				});
 			}
